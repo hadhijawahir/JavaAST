@@ -46,13 +46,15 @@ public class Node<Tree> {
 
 
     private static Node<String> createTree() {
-
+        
+        // Root Node
         Node<String> root = new Node<>("CompilationUnit");
-
+        
+        // Children of Root Node
         Node<String> nodeNatP = root.addChild(new Node<String>("NatP"));
         Node<String> nodeNatS = root.addChild(new Node<String>("NatS"));
 
-        // NatP Sub Tree
+        // NatP Sub Tree Nodes
         Node<String> nodeNatP_KVP1 = nodeNatP.addChild(new Node<String>("Key Value Pair 1"));
         Node<String> nodeNatP_KVP1_key = nodeNatP_KVP1.addChild(new Node<String>("url"));
         Node<String> nodeNatP_KVP1_value = nodeNatP_KVP1.addChild(new Node<String>("localhost:4222"));
@@ -65,7 +67,7 @@ public class Node<Tree> {
         Node<String> nodeNatP_KVP3_key = nodeNatP_KVP3.addChild(new Node<String>("message"));
         Node<String> nodeNatP_KVP3_value = nodeNatP_KVP3.addChild(new Node<String>("sample message"));
 
-        // NatS Sub Tree
+        // NatS Sub Tree Nodes
         Node<String> nodeNatS_KVP1 = nodeNatS.addChild(new Node<String>("Key Value Pair 1"));
         Node<String> nodeNatS_KVP1_key = nodeNatS_KVP1.addChild(new Node<String>("url"));
         Node<String> nodeNatS_KVP1_value = nodeNatS_KVP1.addChild(new Node<String>("localhost:4222"));
